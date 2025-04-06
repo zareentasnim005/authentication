@@ -23,11 +23,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.pinkAccent,
       ),
-      initialRoute: '/login',
+      initialRoute: '/weather',
       routes: {
-        '/signup': (context) => SignupScreen(),
+        '/signup': (context) => const SignupScreen(),
         '/login': (context) => LoginScreen(),
-        '/weather': (context) => WeatherScreen(),
+        '/weather': (context) => const HomePage(),
       },
     );
   }
